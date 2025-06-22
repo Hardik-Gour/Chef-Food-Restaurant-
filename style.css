@@ -241,11 +241,14 @@ footer {
     align-items: center
 }
 
-.nav ul li {
+.nav ul li  {
     padding: 0 1.8rem;
     font-size: .8rem;
     cursor: pointer;
     transition: transform .2s
+}
+.nav a{
+    color: var(--white-color);
 }
 
 .nav ul li::after {
