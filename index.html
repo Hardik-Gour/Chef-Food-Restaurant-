@@ -1,104 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 
 <head>
-    <!-- CDN Link Start Here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS start here -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        crossorigin=anonymous referrerpolicy=no-referrer />
+    <meta name=description
+        content="Cheffood Restaurant - Enjoy delicious and freshly-prepared meals including starters, mains, and beverages.">
+    <link rel=preload href=style.css as=style onload="this.rel='stylesheet'">
+    <link rel=preload href=media.css as=style onload="this.rel='stylesheet'">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
 </head>
 
 <body>
-
-
-    <!-- Starting section start here -->
-    <section id="One">
-        <div class="overlay">
-            <div class="welcome-text">
-                <div class="logo-text-line">
-                    <img src="my img/logo.svg" alt="Restaurant Logo" class="logo">
+    <section id=One>
+        <div class=overlay>
+            <div class=welcome-text>
+                <div class=logo-text-line>
+                    <img src="my img/logo.svg" alt="Restaurant Logo" class=logo>
                 </div>
-                <div class="text-box">
+                <div class=text-box>
                     <span>Welcome to</span>
                     <span>Restaurant</span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Header section start here -->
-    <header id="sticky">
-        <!-- Mobile + Desktop Header Container -->
-        <div class="header">
-
-            <!-- Sliding Mobile Menu (hidden by default, slides in on click) -->
-            <div class="header-bar" id="mobileMenu">
-                <!-- Left Arrow inside sliding menu -->
-                <i class="fa-solid fa-arrow-left" id="arrow"></i>
-
-                <!-- Mobile Navigation Links -->
-                <div class="nav">
+    <header id=sticky>
+        <div class=header>
+            <div class=header-bar id=mobileMenu>
+                <i class="fa-solid fa-arrow-left" id=arrow></i>
+                <div class=nav>
                     <ul>
-                        <a href="index.html">
+                        <a href=index.html>
                             <li>Home</li>
                         </a>
-                        <a href="about.html">
+                        <a href=about.html>
                             <li>About</li>
                         </a>
-                        <a href="menu.html">
+                        <a href=menu.html>
                             <li>Food Menu</li>
                         </a>
-                        <a href="events.html">
+                        <a href=events.html>
                             <li>Events</li>
                         </a>
                     </ul>
                 </div>
             </div>
-
-            <!-- Logo -->
-            <div class="logo">
-                <img src="my img/logo.svg" alt="">
+            <div class=logo>
+                <img src="my img/logo.svg" alt="Chef Food Restaurant Logo" loading=lazy>
             </div>
-
-            <!-- Mobile Menu Toggle Button (Three Bars) -->
-            <div class="bar" id="menuToggle">
+            <div class=bar id=menuToggle>
                 <i class="fa-solid fa-bars"></i>
             </div>
-
-            <!-- Desktop Navigation -->
-            <div class="nav">
+            <div class=nav>
                 <ul>
-                    <a href="index.html">
+                    <a href=index.html>
                         <li>Home</li>
                     </a>
-                    <a href="about.html">
+                    <a href=about.html>
                         <li>About</li>
                     </a>
-                    <a href="menu.html">
+                    <a href=menu.html>
                         <li>Food Menu</li>
                     </a>
-                    <a href="events.html">
+                    <a href=events.html>
                         <li>Events</li>
                     </a>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- section 1st  -->
-    <!-- Home section start here -->
-    <section id="main-slide">
-        <!-- Main slide title here -->
-        <div id="main-title">
-            <div id="bgdiv">
+    <section id=main-slide>
+        <div id=main-title>
+            <div id=bgdiv>
                 <h1>Enjoy Delicious Food in your Healthy Life</h1>
                 <p>Maintaining a healthy lifestyle doesn't mean you have to give up on delicious food. In fact, with
                     the
@@ -106,497 +83,436 @@
                     well-being.
                     A healthy life is all about moderation, mindful eating, and incorporating nutritious ingredients
                     into your daily meals.</p>
-                <!-- Visit now button here -->
-                <button class="visitbtn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class=visitbtn>Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
         </div>
-        <!-- Main home image here -->
-        <div id="main-img">
-            <img src="my img/serving.webp" alt="Main image">
+        <div id=main-img>
+            <img src="my img/serving.webp" alt="Delicious food being served" loading=lazy>
         </div>
     </section>
-    <!-- section 2nd  -->
-    <!-- Home ture here -->
-    <section id="ture">
+    <section id=ture>
         <video autoplay muted loop playsinline>
-            <source src="my img/ture/ture.mp4" type="video/mp4">
+            <source src="my img/ture/ture.mp4" type=video/mp4>
         </video>
     </section>
-    <!-- section 3rd  -->
-    <!-- Home populer food here -->
-    <section id="main-slide3">
-        <!-- Main slide3 heading and description -->
-        <div id="fav-head">
+    <section id=main-slide3>
+        <div id=fav-head>
             <h2>Our Popular Food Items</h2>
             <p>Explore our most loved dishes crafted with fresh ingredients and authentic flavors that keep our
                 customers coming back for more.</p>
         </div>
-
-
-
-        <div id="fav-slider-wrapper">
-            <!-- slider of populer menu items start here -->
-            <div class="design"></div>
-            <div id="fav-slider-track">
-                <!-- Changed id to class for the slides -->
-
-                <!-- Starters / Appetizers -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Starters  Appetizers/Calamari Rings.webp" alt="Crispy Calamari Rings">
+        <div id=fav-slider-wrapper>
+            <div class=design></div>
+            <div id=fav-slider-track>
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Starters  Appetizers/Calamari Rings.webp" alt="Crispy Calamari Rings"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Calamari Rings</h3>
                             <p>Crispy squid rings, served with sauce.</p>
-                            <p class="fav-price">Price: ₹320</p>
+                            <p class=fav-price>Price: ₹320</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Starters  Appetizers/Stuffed Mushrooms.webp"
-                                alt="Stuffed Mushroom Bites">
+                                alt="Stuffed Mushroom Bites" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Stuffed Mushrooms</h3>
                             <p>Cheesy mushrooms baked to perfection.
-
                             </p>
-                            <p class="fav-price">Price: ₹280</p>
+                            <p class=fav-price>Price: ₹280</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Starters  Appetizers/Chicken Lollipops.webp"
-                                alt="Spicy Chicken Lollipops">
+                                alt="Spicy Chicken Lollipops" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Chicken Lollipops</h3>
                             <p>Tangy chicken drumettes with sauce.</p>
-                            <p class="fav-price">Price: ₹340</p>
+                            <p class=fav-price>Price: ₹340</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Starters  Appetizers/Paneer Skewers.webp" alt="Paneer Tikka Skewers">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Starters  Appetizers/Paneer Skewers.webp" alt="Paneer Tikka Skewers"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Paneer Skewers</h3>
                             <p>Marinated paneer, roasted in tandoor.</p>
-                            <p class="fav-price">Price: ₹300</p>
+                            <p class=fav-price>Price: ₹300</p>
                         </div>
                     </div>
                     <h2>Starters / Appetizers</h2>
                 </div>
-
-                <!-- Soups & Salads -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Soups & Salads/Tomato Soup.webp" alt="Creamy Tomato Basil Soup">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Soups & Salads/Tomato Soup.webp" alt="Creamy Tomato Basil Soup"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Tomato Soup</h3>
                             <p>Rich tomato soup with fresh basil.</p>
-                            <p class="fav-price">Price: ₹220</p>
+                            <p class=fav-price>Price: ₹220</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Soups & Salads/Hot Sour Soup.webp" alt="Hot & Sour Chicken Soup">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Soups & Salads/Hot Sour Soup.webp" alt="Hot & Sour Chicken Soup"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Hot Sour Soup</h3>
                             <p>Tangy chicken soup with crisp vegetables.</p>
-                            <p class="fav-price">Price: ₹200</p>
+                            <p class=fav-price>Price: ₹200</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Soups & Salads/Caesar Salad.webp" alt="Garden Fresh Caesar Salad">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Soups & Salads/Caesar Salad.webp" alt="Garden Fresh Caesar Salad"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Caesar Salad</h3>
                             <p>Crisp lettuce with parmesan and dressing.</p>
-                            <p class="fav-price">Price: ₹240</p>
+                            <p class=fav-price>Price: ₹240</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Soups & Salads/Papaya Salad.webp" alt="Thai Papaya Salad">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Soups & Salads/Papaya Salad.webp" alt="Thai Papaya Salad"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Papaya Salad</h3>
                             <p>Fresh papaya in spicy Thai dressing.
-
                             </p>
-                            <p class="fav-price">Price: ₹260</p>
+                            <p class=fav-price>Price: ₹260</p>
                         </div>
                     </div>
                     <h2>Soups & Salads</h2>
                 </div>
-
-                <!-- Mains – Indian Cuisine -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Mains – Indian Cuisine/Butter Chicken.webp" alt="Butter Chicken">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Mains – Indian Cuisine/Butter Chicken.webp" alt="Butter Chicken"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Butter Chicken</h3>
                             <p>Creamy chicken in rich tomato sauce.</p>
-                            <p class="fav-price">Price: ₹200</p>
+                            <p class=fav-price>Price: ₹200</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Mains – Indian Cuisine/Paneer Lababdar.webp" alt="Paneer Lababdar">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Mains – Indian Cuisine/Paneer Lababdar.webp" alt="Paneer Lababdar"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Paneer Lababdar</h3>
                             <p>Paneer in savory tomato-onion sauce.</p>
-                            <p class="fav-price">Price: ₹220</p>
+                            <p class=fav-price>Price: ₹220</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Mains – Indian Cuisine/Chicken Biryani.webp" alt="Chicken Biryani">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Mains – Indian Cuisine/Chicken Biryani.webp" alt="Chicken Biryani"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Chicken Biryani</h3>
                             <p>Spiced rice with tender chicken pieces.
-
                             </p>
-                            <p class="fav-price">Price: ₹180</p>
+                            <p class=fav-price>Price: ₹180</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Mains – Indian Cuisine/Mutton Rogan.webp" alt="Mutton Rogan Josh">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Mains – Indian Cuisine/Mutton Rogan.webp" alt="Mutton Rogan Josh"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Mutton Rogan</h3>
                             <p>Tender mutton in rich Kashmiri gravy.</p>
-                            <p class="fav-price">Price: ₹200</p>
+                            <p class=fav-price>Price: ₹200</p>
                         </div>
                     </div>
                     <h2>Mains – Indian Cuisine</h2>
                 </div>
-
-                <!-- Mains – Continental / Global Cuisine -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Mains – Continental  Global Cuisine/Lemon Chicken.webp"
-                                alt="Grilled Lemon Herb Chicken">
+                                alt="Grilled Lemon Herb Chicken" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Lemon Chicken</h3>
                             <p>Juicy chicken with zesty lemon herb.</p>
-                            <p class="fav-price">Price: ₹220</p>
+                            <p class=fav-price>Price: ₹220</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Mains – Continental  Global Cuisine/Spaghetti Aglio.webp"
-                                alt="Spaghetti Aglio e Olio">
+                                alt="Spaghetti Aglio e Olio" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Spaghetti Aglio</h3>
                             <p>Classic pasta with olive oil and garlic.</p>
-                            <p class="fav-price">Price: ₹200</p>
+                            <p class=fav-price>Price: ₹200</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Mains – Continental  Global Cuisine/Chicken Stroganoff.webp"
-                                alt="Chicken Stroganoff">
+                                alt="Chicken Stroganoff" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Chicken Stroganoff</h3>
                             <p>Tender chicken in creamy mushroom sauce.</p>
-                            <p class="fav-price">Price: ₹240</p>
+                            <p class=fav-price>Price: ₹240</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
+                    <div class=items>
+                        <div class=fav-img>
                             <img src="my img/menu/Mains – Continental  Global Cuisine/Thai Green Curry.webp"
-                                alt="Thai Green Curry with Jasmine Rice">
+                                alt="Thai Green Curry with Jasmine Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Thai Green Curry</h3>
                             <p>Authentic Thai curry with fragrant rice.
-
                             </p>
-                            <p class="fav-price">Price: ₹260</p>
+                            <p class=fav-price>Price: ₹260</p>
                         </div>
                     </div>
                     <h2>Mains – Continental / Global Cuisine</h2>
                 </div>
-
-                <!-- Breads & Sides -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Breads & Sides/Garlic Naan.webp" alt="Steamed Rice">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Breads & Sides/Garlic Naan.webp" alt="Steamed Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Garlic Naan</h3>
                             <p>Soft, garlicky flatbread fresh from tandoor.</p>
-                            <p class="fav-price">Price: $5</p>
+                            <p class=fav-price>Price: $5</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Breads & Sides/Butter Roti.webp" alt="Paneer Butter Masala">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Breads & Sides/Butter Roti.webp" alt="Paneer Butter Masala"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Butter Roti</h3>
                             <p>Warm whole wheat flatbread with butter.</p>
-                            <p class="fav-price">Price: $12</p>
+                            <p class=fav-price>Price: $12</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Breads & Sides/Plain Paratha.webp" alt="Veg Hakka Noodles">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Breads & Sides/Plain Paratha.webp" alt="Veg Hakka Noodles"
+                                loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Plain Paratha</h3>
                             <p>Flaky, golden flatbread cooked on griddle.
                             </p>
-                            <p class="fav-price">Price: $8</p>
+                            <p class=fav-price>Price: $8</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Breads & Sides/Stuffed Kulcha.webp" alt="Jeera Rice">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Breads & Sides/Stuffed Kulcha.webp" alt="Jeera Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Stuffed Kulcha</h3>
                             <p>Stuffed bread with savory filling.
-
                             </p>
-                            <p class="fav-price">Price: $6</p>
+                            <p class=fav-price>Price: $6</p>
                         </div>
                     </div>
                     <h2>Breads & Sides</h2>
                 </div>
-
-                <!-- Desserts -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Desserts/Lava Cake.webp" alt="Steamed Rice">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Desserts/Lava Cake.webp" alt="Steamed Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Lava Cake</h3>
                             <p>Warm chocolate dessert with molten center.</p>
-                            <p class="fav-price">Price: $5</p>
+                            <p class=fav-price>Price: $5</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Desserts/Gulab Jamun.webp" alt="Paneer Butter Masala">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Desserts/Gulab Jamun.webp" alt="Paneer Butter Masala" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Gulab Jamun</h3>
                             <p>Soft dumplings paired with creamy ice cream.</p>
-                            <p class="fav-price">Price: $12</p>
+                            <p class=fav-price>Price: $12</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Desserts/Classic Tiramisu.webp" alt="Veg Hakka Noodles">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Desserts/Classic Tiramisu.webp" alt="Veg Hakka Noodles" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Classic Tiramisu</h3>
                             <p>Classic Italian dessert with rich cream.
                             </p>
-                            <p class="fav-price">Price: $8</p>
+                            <p class=fav-price>Price: $8</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Desserts/Fruit Tart.webp" alt="Jeera Rice">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Desserts/Fruit Tart.webp" alt="Jeera Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Fruit Tart</h3>
                             <p>Crisp tart topped with fresh fruit.</p>
-                            <p class="fav-price">Price: $6</p>
+                            <p class=fav-price>Price: $6</p>
                         </div>
                     </div>
                     <h2>Desserts</h2>
                 </div>
-
-                <!-- Beverages -->
-                <div class="fav-food-slide">
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Beverages/Lime Soda.webp" alt="Steamed Rice">
+                <div class=fav-food-slide>
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Beverages/Lime Soda.webp" alt="Steamed Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Lime Soda</h3>
                             <p>Refreshing soda with a hint of lime.</p>
-                            <p class="fav-price">Price: $5</p>
+                            <p class=fav-price>Price: $5</p>
                         </div>
                     </div>
-
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Beverages/Iced Coffee.webp" alt="Paneer Butter Masala">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Beverages/Iced Coffee.webp" alt="Paneer Butter Masala" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Iced Coffee</h3>
                             <p>Chilled coffee with creamy finish.</p>
-                            <p class="fav-price">Price: $12</p>
+                            <p class=fav-price>Price: $12</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Beverages/Masala Chai.webp" alt="Veg Hakka Noodles">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Beverages/Masala Chai.webp" alt="Veg Hakka Noodles" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Masala Chai</h3>
                             <p>Spiced Indian tea with aromatic flavors.
                             </p>
-                            <p class="fav-price">Price: $8</p>
+                            <p class=fav-price>Price: $8</p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="fav-img">
-                            <img src="my img/menu/Beverages/Mango Lassi.webp" alt="Jeera Rice">
+                    <div class=items>
+                        <div class=fav-img>
+                            <img src="my img/menu/Beverages/Mango Lassi.webp" alt="Jeera Rice" loading=lazy>
                         </div>
-                        <div class="item-content">
+                        <div class=item-content>
                             <h3>Mango Lassi</h3>
                             <p>Creamy yogurt drink with sweet mango.</p>
-                            <p class="fav-price">Price: $6</p>
+                            <p class=fav-price>Price: $6</p>
                         </div>
                     </div>
                     <h2>Beverages</h2>
                 </div>
-
             </div>
         </div>
-
         <button class="fav-slider-btn prev">&#10094;</button>
         <button class="fav-slider-btn next">&#10095;</button>
     </section>
-
-
-
-
-
-
-
-    <!-- section 4th  -->
-    <!-- Home Customer Reviews here -->
-    <section id="main-slide4">
-        <!-- Left: Comments Section -->
-        <div id="slide4-title">
-            <div id="comments-bgdiv">
-                <h2 id="section-heading">Customer Reviews</h2>
-                <div id="slider">
-                    <div id="innerSlider" class="inner">
-                        <div class="slide">
-                            <img src="my img/man chef.webp" alt="Customer 1">
+    <section id=main-slide4>
+        <div id=slide4-title>
+            <div id=comments-bgdiv>
+                <h2 id=section-heading>Customer Reviews</h2>
+                <div id=slider>
+                    <div id=innerSlider class=inner>
+                        <div class=slide>
+                            <img src="my img/man chef.webp" alt="Customer 1" loading=lazy>
                             <span>John D.</span>
                             <p>"Absolutely loved the food and service! A must-visit spot for food lovers."</p>
                         </div>
-                        <div class="slide">
-                            <img src="my img/woman chef.webp" alt="Customer 2">
+                        <div class=slide>
+                            <img src="my img/woman chef.webp" alt="Customer 2" loading=lazy>
                             <span>Priya Sharma</span>
                             <p>"Incredible ambiance and mouth-watering dishes. I’ll definitely come again!"</p>
                         </div>
-                        <div class="slide">
-                            <img src="my img/man chef.webp" alt="Customer 3">
+                        <div class=slide>
+                            <img src="my img/man chef.webp" alt="Customer 3" loading=lazy>
                             <span>Ahmed Khan</span>
                             <p>"From starters to desserts, everything was perfect. Highly recommended!"</p>
                         </div>
-                        <div class="slide">
-                            <img src="my img/woman chef.webp" alt="Customer 4">
+                        <div class=slide>
+                            <img src="my img/woman chef.webp" alt="Customer 4" loading=lazy>
                             <span>Sophie Lee</span>
                             <p>"The chef's special was delightful. Great value for money and great vibes."</p>
                         </div>
                     </div>
-
-                    <!-- Nav buttons -->
-                    <div class="nav-button">
-                        <button id="prevBtn" class="nav-left"><i class="fa-solid fa-arrow-left"></i></button>
-                        <button id="nextBtn" class="nav-right"><i class="fa-solid fa-arrow-right"></i></button>
+                    <div class=nav-button>
+                        <button id=prevBtn class=nav-left><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id=nextBtn class=nav-right><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!-- Right: Image -->
-        <div id="slid4-img">
+        <div id=slid4-img>
             <img src="my img/feed.webp" alt="Main image">
         </div>
     </section>
-    <!-- section 5th  -->
-    <!-- Home Map here -->
-    <section id="main-slide5">
-        <div class="map">
+    <section id=main-slide5>
+        <div class=map>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4660.758291427746!2d76.64041661200079!3d27.561947176167237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39729755dec24b3f%3A0x6bfff3bde4ee9a62!2sC266%2C%20Road%2C%20Jat%20Colony%2C%20Sakti%20Nagar%2C%20Alwar%2C%20Rajasthan%20301001!5e1!3m2!1sen!2sin!4v1749698591060!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width=600 height=450 style=border:0 allowfullscreen loading=lazy
+                referrerpolicy=no-referrer-when-downgrade></iframe>
         </div>
     </section>
-    <!-- Footer section 6th  -->
-    <!-- footer section start here -->
     <footer>
-        <div class="row">
-            <div class="col">
+        <div class=row>
+            <div class=col>
                 <h3>Get in Touch</h3>
                 <p>📍 Location: New location in Alwar, Rajasthan</p>
                 <p>📞 Call Us: +91 1234567890</p>
                 <p>📧 Email: new@gmail.com</p>
             </div>
-            <div class="col">
+            <div class=col>
                 <h3>Opening Hours</h3>
                 <p>🕒 Mon–Fri: 11 AM – 10 PM</p>
                 <p>🕒 Sat–Sun: 9 AM – 11 PM</p>
             </div>
-            <div class="col">
+            <div class=col>
                 <h3>Social Media</h3>
-                <div class="social-icons">
+                <div class=social-icons>
                     <span>Follow us:</span>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href=#><i class="fa-brands fa-facebook"></i></a>
+                    <a href=#><i class="fa-brands fa-instagram"></i></a>
+                    <a href=#><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class=footer-bottom>
             <p>© 2025 CHEF FOOD. All Rights Reserved.</p>
         </div>
     </footer>
-
-
-
-
-    <script src="main.js"></script>
-    <script src="header.js"></script>
-    <script src="populer item.js"></script>
-    <script src="customer slider.js"></script>
-
-
+    <script src=main.js defer></script>
+    <script src=header.js defer></script>
+    <script src="populer item.js" defer></script>
+    <script src="customer slider.js" defer></script>
 </body>
 
 </html>

@@ -1,22 +1,101 @@
-/* Import font-family */
+@import url(https://fonts.googleapis.com/css2?family=Squada+One&display=swap);
 
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+#sticky,
+.header {
+    position: sticky;
+    top: 0
+}
+
+#bgdiv,
+#comments-bgdiv {
+    height: auto;
+    background-color: rgba(138, 138, 138, .8);
+    padding: 1.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    position: relative
+}
+
+#section-heading,
+h1,
+p {
+    margin-bottom: 1rem
+}
+
+#One,
+#main-slide,
+#main-slide3,
+#main-slide3 .items,
+#main-slide4,
+#slider,
+#sticky,
+#ture,
+.overlay {
+    overflow: hidden
+}
+
+#bgdiv,
+#comments-bgdiv,
+#main-slide3,
+#slider,
+.nav ul li {
+    position: relative
+}
+
+.nav ul li,
+footer {
+    color: var(--white-color)
+}
+
+#main-title p,
+footer,
+html {
+    line-height: 1.6
+}
+
+*,
+footer {
+    box-sizing: border-box
+}
+
+.nav ul li,
+.team-button,
+.welcome-text {
+    text-transform: uppercase
+}
+
+.nav ul li,
+.slide span,
+.team-button,
+.visitbtn,
+h1 {
+    font-weight: 700
+}
+
+*,
+.social-icons a,
+.team-button {
+    text-decoration: none
+}
+
+#show-menu,
+body {
+    overflow-x: hidden
+}
+
+#menu-button button.active,
+.bar i:hover,
+.header-bar .fa-arrow-left:hover,
+.visitbtn:hover i {
+    color: var(--secondary-color)
+}
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
-    /* color: rgb(168, 167, 167); */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* outline: 1px solid red; */
-    /* Temporarily shows borders */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
-
-/* Defining the variables */
 :root {
     --main-color: #0e1111;
     --secondary-color: #232b2b;
@@ -24,84 +103,79 @@
     --text-color: #ffecd1;
     --white-color: #fffffa;
     --main-font: "Monda", serif;
-    --secondary-font: "Lora", serif;
-
+    --secondary-font: "Lora", serif
 }
 
-/* === Base font setup === */
 html {
-    font-size: 16px;
-    /* 1rem = 16px */
-    line-height: 1.6;
+    font-size: 16px
 }
 
-/* === Predefined Text Elements === */
 h1 {
-    font-size: 2.5rem;
-    /* 40px */
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 2.5rem
+}
+
+h2,
+h3 {
+    font-weight: 600
 }
 
 h2 {
     font-size: 2rem;
-    /* 32px */
-    font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: .75rem
+}
+
+.slide img,
+h3 {
+    margin-bottom: 15px
 }
 
 h3 {
-    font-size: 1.75rem;
-    /* 28px */
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.75rem
+}
+
+p,
+span {
+    font-size: 1rem
 }
 
 p {
-    font-size: 1rem;
-    /* 16px */
-    font-weight: 400;
-    margin-bottom: 1rem;
-
+    font-weight: 400
 }
 
 span {
-    font-size: 1rem;
-    color: inherit;
+    color: inherit
 }
 
 body {
-    background-color: var(--background-color);
-    overflow-x: hidden;
+    background-color: var(--background-color)
 }
-
-
-
-
-
-/* Overlay Section image start here */
 
 #One {
     height: 100vh;
     width: 100%;
-    background: url('my img/section1.webp') no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
+    background: url('my img/section1.webp') center center/cover no-repeat
 }
 
 .overlay {
     height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, .4);
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-out;
-    overflow: hidden;
-    /* Smooth animation */
+    transition: transform .5s ease-out
 }
 
+.header,
+footer {
+    background-color: var(--main-color)
+}
+
+.visitbtn,
+.visitbtn i {
+    transition: 1.2s
+}
 
 .welcome-text {
     display: flex;
@@ -109,116 +183,69 @@ body {
     flex-wrap: wrap;
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .7)
 }
-
 
 .logo-text-line {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .logo-text-line .logo {
     max-width: 25rem;
-    margin-right: 1.5rem;
+    margin-right: 1.5rem
 }
 
 .text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .text-box span {
     font-size: 5rem;
-    line-height: 2;
+    line-height: 2
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Sticky header id --------------------------------------------------------------------------------------------*/
 #sticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    overflow: hidden;
+    z-index: 10
 }
 
-/* Header section start here */
-/* For hiding mobile header */
+.bar,
 .header-bar {
-    display: none;
+    display: none
 }
 
 .logo img {
-    width: 9.3rem;
-}
-
-/* Hiding cross and lines for mobile */
-.bar {
-    display: none;
+    width: 9.3rem
 }
 
 .header img {
     height: auto;
-    width: 6.2rem;
+    width: 6.2rem
 }
 
-/* Set header layout */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 6.2rem;
     padding: 0 7vw;
-    background-color: var(--main-color);
-    border-bottom: 4px double var(--background-color);
-    position: sticky;
-    /* overflow: hidden; */
-    top: 0;
+    border-bottom: 4px double var(--background-color)
 }
 
 .header ul {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .nav ul li {
     padding: 0 1.8rem;
-    font-size: 0.8rem;
-    color: var(--white-color);
-    font-weight: bold;
-    position: relative;
+    font-size: .8rem;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: transform .2s;
+    transition: transform .2s
 }
 
 .nav ul li::after {
@@ -231,252 +258,185 @@ body {
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-    transition: width 0.5s ease;
-    pointer-events: none;
+    transition: width .5s;
+    pointer-events: none
 }
 
 .nav ul li:hover::after {
-    width: 90%;
+    width: 90%
 }
 
 .header ul li:hover {
-    color: var(--text-color);
+    color: var(--text-color)
 }
 
 .bar i {
-    color: white;
+    color: #fff
 }
 
-.bar i:hover {
-    color: var(--secondary-color);
+#fav-slider-track h2,
+#main-slide3 .fav-price,
+.visitbtn,
+.visitbtn i {
+    color: var(--text-color)
 }
 
-.header-bar .fa-arrow-left:hover {
-    color: var(--secondary-color);
-}
-
-/* Sticky header ends id --------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slide-1 resturent discription */
 #main-slide {
     display: flex;
-    /* height: 100vh; */
     width: 100%;
     flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    /* justify-content: space-between; */
+    align-items: center
 }
 
-#main-img {
+#main-img,
+#slid4-img {
     width: 80%;
-    height: auto;
+    height: auto
 }
 
 #main-title {
     width: 50%;
     height: auto;
     text-align: justify;
-    justify-content: space-around;
+    justify-content: space-around
+}
+
+#fav-slider-track h2,
+#main-slide3 #fav-head,
+#main-slide3 .items,
+#section-heading,
+.col,
+.footer-bottom,
+.row h3,
+.slide {
+    text-align: center
 }
 
 #main-img img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    border-radius: 30px 0 0 30px;
-
+    border-radius: 30px 0 0 30px
 }
 
 #main-title h1 {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.8rem
 }
 
 #main-title p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1rem
+}
+
+#main-slide3 #fav-head h2,
+#section-heading {
+    font-size: 1.8rem
 }
 
 #bgdiv {
-    position: relative;
     width: 100%;
     flex-wrap: wrap;
-    height: auto;
     left: 6.5rem;
-    background-color: rgba(138, 138, 138, 0.8);
-    padding: 1.8rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px
 }
 
-/* Visit Now button start here */
 .visitbtn {
     cursor: pointer;
     margin-top: 1.2rem;
     width: 10rem;
-    font-weight: bold;
-    color: var(--text-color);
     line-height: 50px;
     background-color: var(--secondary-color);
     border-radius: 5px;
     border: 1px solid var(--secondary-color);
-    box-shadow: 0 10px 15px var(--white-color);
-    transition: all 1.2s;
+    box-shadow: 0 10px 15px var(--white-color)
 }
 
-.visitbtn i {
-    color: var(--text-color);
-    transition: all 1.2s;
+#about-us,
+#main-slide3 .items,
+#team,
+.fav-slider-btn {
+    background-color: var(--background-color)
 }
 
+#menu-button button.active:focus,
+#menu-button button.active:hover,
+#menu-button button:focus,
+#menu-button button:hover,
+.team-button:hover,
 .visitbtn:hover {
     background-color: var(--text-color);
     box-shadow: 0 2px 15px var(--white-color);
     border: 1px solid var(--main-color);
-    color: var(--secondary-color);
+    color: var(--secondary-color)
 }
 
-.visitbtn:hover i {
-    color: var(--secondary-color);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slide-2 ture video start here */
 #ture {
-    margin: 4.3rem 0;
-    overflow: hidden;
+    margin: 4.3rem 0
 }
 
 #ture video {
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    box-shadow: var(--main-color) 0px 30px 60px -12px inset, var(--main-color) 0px 18px 36px -18px inset;
+    box-shadow: var(--main-color) 0 30px 60px -12px inset, var(--main-color) 0 18px 36px -18px inset
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slide-3 Our Popular menu Food Items box */
 #main-slide3 {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
     z-index: 1;
-    margin: 70px 0;
-    overflow: hidden;
-
+    margin: 70px 0
 }
 
 #main-slide3 #fav-head {
-    text-align: center;
-    /* width: 450px; */
-    margin-bottom: 1.8rem;
-}
-
-#main-slide3 #fav-head h2 {
-    font-size: 1.8rem;
+    margin-bottom: 1.8rem
 }
 
 #main-slide3 #fav-head p {
     text-align: center;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.6
 }
 
-/* Slider Container Styles */
 #fav-slider-wrapper {
     overflow: hidden;
     width: 100%;
-    position: relative;
+    position: relative
 }
 
 #fav-slider-track {
     display: flex;
-    transition: transform 0.8s ease-in-out;
-    width: 100%;
+    transition: transform .8s ease-in-out;
+    width: 100%
 }
 
 .fav-food-slide {
     flex: 0 0 100%;
     min-width: 100%;
     display: flex;
-    /* background-color: #46200a; */
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 3rem 0;
+    margin: 3rem 0
 }
 
-/* Food Item Styles */
 #main-slide3 .items {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
     border-radius: 30px;
     margin-bottom: 5rem;
-    box-shadow: 0 2px 10px rgba(119, 119, 119, 0.438);
+    box-shadow: 0 2px 10px rgba(119, 119, 119, .438);
     width: 15.6rem;
     height: 25rem;
-    text-align: center;
-    cursor: pointer;
-    overflow: hidden;
+    cursor: pointer
 }
 
 #main-slide3 .items .fav-img {
     flex: 1;
     height: 50%;
-    width: 100%;
+    width: 100%
 }
 
 #main-slide3 .items .fav-img img {
@@ -484,7 +444,7 @@ body {
     height: 100%;
     object-fit: fill;
     border-radius: 30px 30px 0 0;
-    background-color: antiquewhite;
+    background-color: #faebd7
 }
 
 .item-content {
@@ -494,176 +454,139 @@ body {
     display: flex;
     flex-direction: column;
     align-items: justify;
-    padding: 0.6rem;
+    padding: .6rem;
     border-radius: 30px;
-    justify-content: space-evenly;
-
+    justify-content: space-evenly
 }
 
 #main-slide3 .item-content h3 {
-    margin: 0.6rem 0;
-    font-size: 18px;
+    margin: .6rem 0;
+    font-size: 18px
 }
 
 #main-slide3 .item-content p {
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 1rem
 }
 
 #main-slide3 .fav-price {
-    color: var(--text-color);
     margin-top: 1.2rem;
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: .9rem;
     display: flex;
     justify-content: center;
-    align-content: end;
+    align-content: end
 }
 
-/* Slider Navigation Buttons */
 .fav-slider-btn {
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
-    background-color: var(--background-color);
     border: none;
     border-radius: 8px;
     font-size: 2rem;
-    color: white;
-    padding: 0.6rem;
+    color: #fff;
+    padding: .6rem;
     cursor: pointer;
     z-index: 10;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+    opacity: .8;
+    transition: opacity .3s
+}
+
+.nav-left,
+.nav-right,
+.nextBtn,
+.prevBtn {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer
 }
 
 .fav-slider-btn:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 .fav-slider-btn.prev {
-    left: 10px;
+    left: 10px
 }
 
 .fav-slider-btn.next {
-    right: 10px;
+    right: 10px
 }
 
-/* Background Design Element */
 #main-slide3 .design {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* full height of parent */
     background: var(--secondary-color);
-    box-shadow: var(--main-color) 0px 30px 60px -12px inset,
-        var(--main-color) 0px 18px 36px -18px inset;
+    box-shadow: var(--main-color) 0 30px 60px -12px inset, var(--main-color) 0 18px 36px -18px inset;
     border-radius: 30px;
-    z-index: 0;
+    z-index: 0
 }
-
 
 #fav-slider-track h2 {
-    color: var(--text-color);
     font-size: 1.8rem;
-    text-align: center;
     width: 100%;
-    margin-top: 1.2rem;
+    margin-top: 1.2rem
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slide-4 Customer Reviews */
 #main-slide4 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    overflow: hidden;
     width: 100%;
     height: auto;
-    margin: 70px 0;
-}
-
-/* Right-side Image */
-#slid4-img {
-    width: 80%;
-    height: auto;
+    margin: 70px 0
 }
 
 #slid4-img img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0 30px 30px 0
 }
 
-/* Left-side content */
 #slide4-title {
     width: 50%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 #comments-bgdiv {
-    position: relative;
     width: 100%;
     flex-wrap: wrap;
-    height: auto;
     right: 6.5rem;
-    background-color: rgba(138, 138, 138, 0.8);
-    padding: 1.8rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
-    z-index: 1;
+    color: #fff;
+    z-index: 1
 }
 
 #section-heading {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: black;
-    text-align: center;
+    color: #000
 }
 
-/* Slider container */
 #slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    width: 100%
 }
 
-/* Slider track */
 .inner {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+    transition: transform .5s ease-in-out;
+    width: 100%
 }
 
-/* Individual slide */
 .slide {
     flex: 0 0 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     color: #fff;
-    padding: 20px;
+    padding: 20px
 }
 
 .slide img {
@@ -671,108 +594,84 @@ body {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #fff;
+    border: 3px solid #fff
+}
+
+.map,
+.map iframe {
+    height: 100%;
+    width: 100%
 }
 
 .slide span {
-    font-weight: bold;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .slide p {
     font-size: 1rem;
     color: #eee;
-    max-width: 90%;
+    max-width: 90%
 }
 
-/* Nav buttons */
 .nav-left,
 .nav-right {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #000;
     border: none;
     padding: 10px 15px;
     font-size: 18px;
     border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    z-index: 2;
+    transition: .3s
+}
+
+.about-image,
+.team-image {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .5)
+}
+
+#menu-button button,
+.team-button {
+    background-color: var(--secondary-color)
+}
+
+.footer-bottom,
+footer {
+    border-top: 4px double var(--background-color)
 }
 
 .nav-left {
-    left: 0;
+    left: 0
 }
 
 .nav-right {
-    right: 0;
+    right: 0
 }
 
 .nav-left:hover,
 .nav-right:hover {
-    background-color: #ddd;
+    background-color: #ddd
 }
 
-
-
-
-
-
-
-/* Slide-5 Location */
 #main-slide5 {
     width: 100%;
     height: 100vh;
     margin: 70px 0;
-    overflow: hidden;
-
-}
-
-.map {
-    width: 100%;
-    height: 100%;
-
+    overflow: hidden
 }
 
 .map iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
+    border-radius: 30px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer section  start here */
-
 
 footer {
     width: 100%;
-    margin: 70px 0px 0px 0;
-    border-top: 4px double var(--background-color);
-    background-color: var(--main-color);
-    color: var(--white-color);
-    padding: 50px 0 0px;
-    line-height: 1.6;
-    box-sizing: border-box;
-    overflow: hidden;
-
-
-
+    margin: 70px 0 0;
+    padding: 50px 0 0;
+    overflow: hidden
 }
 
 .row {
@@ -780,13 +679,11 @@ footer {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
-
 .col {
-    flex: 1 1 22%;
-    text-align: center;
+    flex: 1 1 22%
 }
 
 .social-icons {
@@ -796,172 +693,126 @@ footer {
     gap: 20px;
     margin-top: 10px;
     font-size: 1.2rem;
-    color: #fff;
+    color: #fff
 }
 
 .social-icons a {
     color: #fff;
     font-size: 2rem;
-    transition: transform 0.3s, color 0.3s;
-    text-decoration: none;
+    transition: transform .3s, color .3s
+}
+
+#menu-button button,
+.about-text h2,
+.event-text h2,
+.team-button,
+.team-text h2 {
+    color: var(--text-color);
+    color: var(--text-color)
 }
 
 .social-icons a:hover {
     transform: scale(1.2);
-    color: #FFD700;
-    /* Gold on hover */
-}
-
-h3 {
-    margin-bottom: 15px;
+    color: gold
 }
 
 .row h3 {
     margin-bottom: 15px;
     border-bottom: 2px solid var(--white-color);
     padding-bottom: 5px;
-    text-align: center;
-    transition: color 1.2s ease, border-bottom-color 1.2s ease, border-radius 1.2s ease;
+    transition: color 1.2s, border-bottom-color 1.2s, border-radius 1.2s
 }
 
 .row h3:hover {
     color: #feb200;
     border-bottom-color: #46200a;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer
 }
-
 
 .footer-bottom {
-    text-align: center;
     margin-top: 20px;
-    border-top: 4px double var(--background-color);
-    padding-top: 10px;
+    padding-top: 10px
 }
 
+.about-text,
+.event-text,
+.team-text {
+    width: 50%;
+    padding: 0 80px;
+    display: flex;
+    line-height: 30px;
+    text-align: justify
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* About us  Page Start Here */
-/* ---- About Us Section ---- */
 #about-us {
     width: 100%;
     height: 100vh;
-    background-color: var(--background-color);
-    overflow: hidden;
+    overflow: hidden
 }
 
 .about-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row
 }
 
 .about-image {
     width: 50%;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
-    border-radius: 30px 0 0 30px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 0 0 30px
 }
 
-.about-image img {
+.about-image img,
+.slider-item img,
+.team-image img {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .about-text {
-    width: 50%;
-    display: flex;
     flex-direction: column;
-    padding: 0px 80px;
-    justify-content: center;
-    line-height: 30px;
-    text-align: justify;
+    justify-content: center
 }
 
-.about-text h2 {
+.about-text h2,
+.event-text h2,
+.team-text h2 {
     font-size: 40px;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    color: var(--text-color);
+    text-transform: uppercase
 }
 
-.about-text p {
+.about-text p,
+.event-text p,
+.team-text p {
     font-size: 18px;
     margin-bottom: 20px;
-    color: var(--white-color);
+    color: var(--white-color)
 }
-
-/* Team Section Start Here */
-
 
 #team {
     width: 100%;
     height: 100vh;
     margin: 70px 0;
-    background-color: var(--background-color);
-    overflow: hidden;
-
+    overflow: hidden
 }
 
 .team-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse
 }
 
 .team-image {
     width: 50%;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
-    border-radius: 0 30px 30px 0;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    border-radius: 0 30px 30px 0
 }
 
-.team-image img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
+.event-text,
 .team-text {
-    width: 50%;
-    padding: 0px 80px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.team-text h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: var(--text-color);
-
-}
-
-.team-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--white-color);
-
-
+    justify-content: center
 }
 
 .team-button {
@@ -971,149 +822,99 @@ h3 {
     margin-top: 20px;
     padding: 0 30px;
     height: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 20px;
     letter-spacing: 5px;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
     border-radius: 5px;
     border: 1px solid var(--secondary-color);
     box-shadow: 0 10px 15px var(--white-color);
-    text-decoration: none;
-    transition: all 1.2s;
+    transition: 1.2s
 }
 
-.team-button:hover {
-    background-color: var(--text-color);
-    box-shadow: 0 2px 15px var(--white-color);
-    border: 1px solid var(--main-color);
-    color: var(--secondary-color);
+#menu,
+.event-container1,
+.event-container2,
+.events {
+    height: 100vh;
+    display: flex
 }
 
-
-
-/* Event page Section Start Here */
+#menu,
+#show-menu table td:hover,
+.events {
+    background-color: var(--background-color)
+}
 
 .events {
     width: 100%;
-    height: 100vh;
-    margin: 0px 0 70px 0;
-    display: flex;
+    margin: 0 0 70px;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    overflow: hidden
+}
+
+.slider1,
+.slider2 {
+    width: 50%;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .5)
 }
 
 .event-container1 {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+    flex-direction: row
 }
 
 .event-container2 {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100vh;
-
-}
-
-.event-text {
-    width: 50%;
-    padding: 0px 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.event-text h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: var(--text-color);
-}
-
-.event-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--white-color);
-
+    flex-direction: row-reverse
 }
 
 .slider1 {
-    width: 50%;
     height: 100%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 30px 0 0 30px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 0 0 30px
 }
 
 .slider2 {
-    width: 50%;
     height: 100%;
-    overflow: hidden;
-    position: relative;
-    border-radius: 0 30px 30px 0;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+    border-radius: 0 30px 30px 0
 }
 
 .slider-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
+    transition: transform .5s ease-in-out;
+    height: 100%
 }
 
 .slider-item {
-    flex: 0 0 100%;
+    flex: 0 0 100%
 }
 
-.slider-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.prevBtn,
-.nextBtn {
+.nextBtn,
+.prevBtn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     color: var(--white-color);
     border: none;
     padding: 10px 15px;
     font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .prevBtn {
-    left: 15px;
+    left: 15px
 }
 
 .nextBtn {
-    right: 15px;
+    right: 15px
 }
 
-.prevBtn:hover,
-.nextBtn:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+.nextBtn:hover,
+.prevBtn:hover {
+    background-color: rgba(0, 0, 0, .9)
 }
 
-
-
-/* Menu page  */
 #menu {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background-color);
+    width: 100%
 }
 
 #menu-button {
@@ -1122,50 +923,30 @@ h3 {
     gap: 10px;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 #menu-button button {
-    cursor: pointer;
-    border-radius: 10px;
-    color: var(--text-color);
-    padding: 10px 15px;
-    background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-    box-shadow: 0 0px 5px var(--white-color);
-    transition: all 1.2s;
-
-}
-
-#menu-button button:hover,
-#menu-button button:focus {
-    background-color: var(--text-color);
-    box-shadow: 0 2px 15px var(--white-color);
-    border: 1px solid var(--main-color);
-    color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--white-color)
 }
 
 #show-menu {
     width: 80%;
     height: 90vh;
-    margin: auto;
+    margin: 80px auto auto;
     overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: 80px;
     border-radius: 20px;
     background-color: #e2dacf;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+    padding: 20px
 }
-
 
 #show-menu table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0px 30px;
-    /* spacing between rows */
+    border-spacing: 0px 30px
 }
-
 
 #show-menu table td {
     display: flex;
@@ -1177,119 +958,25 @@ h3 {
     font-weight: 600;
     color: #1f2937;
     cursor: pointer;
-    transition: transform 0.5s ease, background-color 0.5s ease;
+    transition: transform .5s, background-color .5s
 }
 
 #show-menu table td:hover {
-    background-color: var(--background-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08)
 }
-
 
 #menu-button button {
     cursor: pointer;
     border-radius: 10px;
     color: var(--text-color);
     padding: 10px 15px;
-    background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-    box-shadow: 0 0px 5px var(--white-color);
-    transition: all 0.4s ease;
+    box-shadow: 0 0 5px var(--white-color);
+    transition: .4s
 }
 
-#menu-button button:hover,
-#menu-button button:focus,
-#menu-button button.active:hover,
-#menu-button button.active:focus {
-    background-color: var(--text-color);
-    box-shadow: 0 2px 15px var(--white-color);
-    border: 1px solid var(--main-color);
-    color: var(--secondary-color);
-}
-
-/* Optional: make .active button look distinct */
 #menu-button button.active {
     background-color: var(--text-color);
-    color: var(--secondary-color);
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media start from here   */

@@ -1,140 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 
 <head>
-
-    <!-- CDN Link Start Here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS start here -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        crossorigin=anonymous referrerpolicy=no-referrer />
+    <link rel=preload href=style.css as=style onload="this.rel='stylesheet'">
+    <link rel=preload href=media.css as=style onload="this.rel='stylesheet'">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
-
-
 </head>
 
 <body>
-    <!-- Header section start here -->
-    <header id="sticky">
-        <!-- Mobile + Desktop Header Container -->
-        <div class="header">
-
-            <!-- Sliding Mobile Menu (hidden by default, slides in on click) -->
-            <div class="header-bar" id="mobileMenu">
-                <!-- Left Arrow inside sliding menu -->
-                <i class="fa-solid fa-arrow-left" id="arrow"></i>
-
-                <!-- Mobile Navigation Links -->
-                <div class="nav">
+    <header id=sticky>
+        <div class=header>
+            <div class=header-bar id=mobileMenu>
+                <i class="fa-solid fa-arrow-left" id=arrow></i>
+                <div class=nav>
                     <ul>
-                        <a href="index.html">
+                        <a href=index.html>
                             <li>Home</li>
                         </a>
-                        <a href="about.html">
+                        <a href=about.html>
                             <li>About</li>
                         </a>
-                        <a href="menu.html">
+                        <a href=menu.html>
                             <li>Food Menu</li>
                         </a>
-                        <a href="events.html">
+                        <a href=events.html>
                             <li>Events</li>
                         </a>
                     </ul>
                 </div>
             </div>
-
-            <!-- Logo -->
-            <div class="logo">
-                <img src="my img/logo.svg" alt="">
+            <div class=logo>
+                <img src="my img/logo.svg" alt="Chef Food Restaurant Logo" loading=lazy>
             </div>
-
-            <!-- Mobile Menu Toggle Button (Three Bars) -->
-            <div class="bar" id="menuToggle">
+            <div class=bar id=menuToggle>
                 <i class="fa-solid fa-bars"></i>
             </div>
-
-            <!-- Desktop Navigation -->
-            <div class="nav">
+            <div class=nav>
                 <ul>
-                    <a href="index.html">
+                    <a href=index.html>
                         <li>Home</li>
                     </a>
-                    <a href="about.html">
+                    <a href=about.html>
                         <li>About</li>
                     </a>
-                    <a href="menu.html">
+                    <a href=menu.html>
                         <li>Food Menu</li>
                     </a>
-                    <a href="events.html">
+                    <a href=events.html>
                         <li>Events</li>
                     </a>
                 </ul>
             </div>
         </div>
     </header>
-
-
-
-    <section id="menu">
-        <div id="menu-button">
-            <button id="Starters" class="active">Starters / Appetizers</button>
-            <button id="Soups">Soups & Salads</button>
-            <button id="Mains">Mains – Indian Cuisine</button>
-            <button id="Continental">Mains – Continental / Global Cuisine</button>
-            <button id="Breads">Breads & Sides</button>
-            <button id="Desserts">Desserts</button>
-            <button id="Beverages">Beverages</button>
+    <section id=menu>
+        <div id=menu-button>
+            <button id=Starters class=active>Starters / Appetizers</button>
+            <button id=Soups>Soups & Salads</button>
+            <button id=Mains>Mains – Indian Cuisine</button>
+            <button id=Continental>Mains – Continental / Global Cuisine</button>
+            <button id=Breads>Breads & Sides</button>
+            <button id=Desserts>Desserts</button>
+            <button id=Beverages>Beverages</button>
         </div>
-
-        <div id="show-menu">
+        <div id=show-menu>
             <table>
-                <!-- Menu items will be dynamically inserted here -->
             </table>
         </div>
     </section>
-
-
-
-
-    <!-- footer section start here -->
     <footer>
-        <div class="row">
-            <div class="col">
+        <div class=row>
+            <div class=col>
                 <h3>Get in Touch</h3>
                 <p>📍 Location: New location in Alwar, Rajasthan</p>
                 <p>📞 Call Us: +91 1234567890</p>
                 <p>📧 Email: new@gmail.com</p>
             </div>
-            <div class="col">
+            <div class=col>
                 <h3>Opening Hours</h3>
                 <p>🕒 Mon–Fri: 11 AM – 10 PM</p>
                 <p>🕒 Sat–Sun: 9 AM – 11 PM</p>
             </div>
-            <div class="col">
+            <div class=col>
                 <h3>Social Media</h3>
-                <div class="social-icons">
+                <div class=social-icons>
                     <span>Follow us:</span>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href=#><i class="fa-brands fa-facebook"></i></a>
+                    <a href=#><i class="fa-brands fa-instagram"></i></a>
+                    <a href=#><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class=footer-bottom>
             <p>© 2025 CHEF FOOD. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- <script src="main.js"></script> -->
-    <script src="header.js"></script>
-    <script src="menu.js"></script>
+    <script src=header.js defer></script>
+    <script src=menu.js defer></script>
 </body>
 
 </html>
