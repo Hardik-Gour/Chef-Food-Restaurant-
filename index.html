@@ -34,18 +34,10 @@
                 <i class="fa-solid fa-arrow-left" id=arrow></i>
                 <div class=nav>
                     <ul>
-                        <a href=index.html>
-                            <li>Home</li>
-                        </a>
-                        <a href=about.html>
-                            <li>About</li>
-                        </a>
-                        <a href=menu.html>
-                            <li>Food Menu</li>
-                        </a>
-                        <a href=events.html>
-                            <li>Events</li>
-                        </a>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a href="/menu">FOOD MENU</a></li>
+                        <li><a href="/events">EVENTS</a></li>
                     </ul>
                 </div>
             </div>
@@ -433,8 +425,8 @@
                 </div>
             </div>
         </div>
-        <button class="fav-slider-btn prev">&#10094;</button>
-        <button class="fav-slider-btn next">&#10095;</button>
+        <button class="fav-slider-btn prev" aria-label="Previous slide">&#10094;</button>
+        <button class="fav-slider-btn next" aria-label="Next slide">&#10095;</button>
     </section>
     <section id=main-slide4>
         <div id=slide4-title>
@@ -476,7 +468,7 @@
     </section>
     <section id=main-slide5>
         <div class=map>
-            <iframe
+            <iframe title="Google Map showing restaurant location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4660.758291427746!2d76.64041661200079!3d27.561947176167237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39729755dec24b3f%3A0x6bfff3bde4ee9a62!2sC266%2C%20Road%2C%20Jat%20Colony%2C%20Sakti%20Nagar%2C%20Alwar%2C%20Rajasthan%20301001!5e1!3m2!1sen!2sin!4v1749698591060!5m2!1sen!2sin"
                 width=600 height=450 style=border:0 allowfullscreen loading=lazy
                 referrerpolicy=no-referrer-when-downgrade></iframe>
@@ -499,9 +491,15 @@
                 <h3>Social Media</h3>
                 <div class=social-icons>
                     <span>Follow us:</span>
-                    <a href=#><i class="fa-brands fa-facebook"></i></a>
-                    <a href=#><i class="fa-brands fa-instagram"></i></a>
-                    <a href=#><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Visit Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="img/insta.svg" alt="Instagram logo">
+                    </a>
+                    <a href="#" aria-label="Twiter">
+                        <img src="img/insta.svg" alt="Twiter logo">
+                    </a>
                 </div>
             </div>
         </div>
